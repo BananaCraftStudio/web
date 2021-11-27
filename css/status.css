@@ -1,0 +1,278 @@
+/*
+Powered by PHP Made By GuaiJie
+*/
+@font-face {
+    font-family: 'Minecraft';
+    src: url('./minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Minecraft';
+    -webkit-touch-callout:none;  
+    -webkit-user-select:none;  
+    -khtml-user-select:none;  
+    -moz-user-select:none;  
+    -ms-user-select:none;  
+    user-select:none;  
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#Server_Info {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/dirt.png);
+    background-size: 100px 100px;
+}
+
+.title, .footer {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/dirt.png);
+    background-size: 100px 100px;
+}
+
+.title p {
+    width: 100%;
+    line-height: 120px;
+    text-align: center;
+}
+
+.Server_Box {
+    width: 890px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    margin: 0 auto;
+}
+
+.Server_Box:hover {
+    border: 2px solid white;
+}
+
+.img {
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    margin: 2px 0 0 2px;
+    float: left;
+}
+
+.img img {
+    height: 95px;
+    margin-left: -20px;
+}
+
+.ul_left {
+    float: left;
+    margin: 7px 0 0 10px;
+}
+
+.ul_right {
+    float: right;
+    margin: 7px 10px 0 0;
+    padding-right: 50px;
+}
+
+.ul_right li {
+    color: rgb(170,170,170);
+}
+/*
+Powered by PHP Made By GuaiJie
+*/
+.signal {
+    width: 30px;
+    height: 20px;
+    background-image: url(../img/signal.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 95%;
+    top: 15px;
+}
+
+.off {
+    background-position: 0 -25px;
+}
+
+.footer {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.buttom_box {
+    width: 900px;
+    margin: 50px auto 0;
+    /* background-color: red;
+    height: 100px; */
+}
+
+.buttom {
+    float: left;
+    width: 30%;
+    height: 50px;
+    background-image: url(../img/buttom.png);
+    background-size: 100% 200%;
+    margin: 0 15px;
+}
+
+.buttom:hover {
+    background-position: 0 100%;
+}
+
+.buttom a {
+    text-shadow: 1px 1px 5px black;
+    line-height: 40px;
+}
+
+@media (max-width: 920px) {
+    * {
+        font-size: 0.9rem;
+    }
+
+    .Server_Box {
+        width: 500px;
+        height: 85px;
+    }
+
+    .img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .img img {
+        height: 80px;
+    }
+
+    .ul_right {
+        float: right;
+        margin: 7px 10px 0 0;
+        padding-right: 20px;
+    }
+
+    .signal {
+        width: 20px;
+        height: 15px;
+        background-size: 20px;
+        top: 8px;
+    }
+
+    .off {
+        background-position: 0 -15px;
+    }
+
+    .buttom_box {
+        width: 540px;
+        margin: 50px auto 0;
+    }
+
+    .buttom {
+        float: left;
+        width: 150px;
+        height: 50px;
+        background-image: url(../img/buttom.png);
+        background-size: 100% 200%;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 540px) {
+    * {
+        font-size: 0.9rem;
+    }
+
+    .Server_Box {
+        width: 100%;
+        height: 85px;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+        margin: 5px 0 0 2px;
+    }
+    
+    .img img {
+        height: 60px;
+    }
+
+    .ul_left {
+        float: left;
+        margin: 7px 0 0 5px;
+    }
+
+    .ul_right {
+        float: left;
+        margin: 7px 0 0 10px;
+        padding-right: 20px;
+    }
+
+    .signal {
+        width: 20px;
+        height: 15px;
+        background-size: 20px;
+        left: 90%;
+    }
+
+    .off {
+        background-position: 0 -15px;
+    }
+
+    .buttom_box {
+        width: 300px;
+        margin: 50px auto 0;
+    }
+
+    .buttom {
+        float: left;
+        width: 90px;
+        height: 50px;
+        background-image: url(../img/buttom.png);
+        background-size: 100% 200%;
+        margin: 0 5px;
+    }
+}
+
+.loading{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    background: #FCFCFC;
+}
+
+.loading-img{
+    width: 480px;
+    height: 720px;
+    margin: auto;
+    background: url("../img/loading.gif");
+}
+
+.loading-text{
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+}
+/*
+Powered by PHP Made By GuaiJie
+*/
