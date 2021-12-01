@@ -71,7 +71,7 @@
             </div>
         </div>
     <div id="footer"><!--角标-->
-        <p><a href="https://guaijie.ml" target="_blank">©2019-<?php date('Y');?> <strong>BCSERVER</strong> | 由怪杰编写</a></p>
+        <p><a href="https://guaijie.ml" target="_blank">©2019-<?php echo date("Y") ?> <strong>BCSERVER</strong> | 由怪杰编写</a></p>
     </div>
     <script>
 function scroll() {//菜单透明化
