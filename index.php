@@ -10,15 +10,8 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
-<body oncontextmenu="doNothing()">
-<script type="text/javascript">  
-    function doNothing(){  
-        window.event.returnValue=false;  
-        return false;  
-    }  //防复制
-</script>
-    <!--这里用到了PHP的读取WebJson-->
-    <?php
+<body>
+    <?php //这里用到了PHP的读取WebJson
     $Server_IP = "bfc.bcserver.top";//服务器IP
     $Server_Info = file_get_contents("https://mcapi.us/server/status?ip=" . $Server_IP);
     $Server_Info = json_decode($Server_Info, true);
@@ -27,7 +20,7 @@
 		<div class="loading-img"></div>
         <p class="loading-text">少女祈祷中....</p>
     </div>
-    <div id="menu-box"><!--菜单-->
+    <div id="menu-box"><!--顶部菜单-->
         <div class="menu">
             <div class="menu-item">
                 <h2 class="logo"><a href="./">蕉拿之蒙</a></h2>
@@ -78,7 +71,7 @@
             </div>
         </div>
     <div id="footer"><!--角标-->
-        <p><a href="https://guaijie.ml" target="_blank">©2017-2019 <strong>BCSERVER</strong> | 由怪杰编写</a></p>
+        <p><a href="https://guaijie.ml" target="_blank">©2019-<?php date("Y")?> <strong>BCSERVER</strong> | 由怪杰编写</a></p>
     </div>
     <script>
 function scroll() {//菜单透明化
