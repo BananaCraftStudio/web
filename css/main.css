@@ -150,16 +150,37 @@ a{
 .box a:hover {
 	width:120px;
 }
-#footer {
+#copyright-bcserver {
 	padding-top:20px;
 	padding-right:20px;
 	float:right;
 }
-#footer a {
+#copyright-bcserver a {
 	padding-right:20px;
 	color:#5F5F5F;
 	transition:0.4s;
 }
-#footer a:hover {
+#copyright-bcserver a:hover {
 	color:#337AB7;
+}
+
+#moe-icp {
+	position: relative;
+	bottom: -41px;
+	text-align: center;
+}
+
+#moe-icp a {
+	color:#5F5F5F;
+	transition:0.4s;
+}
+#moe-icp a:hover {
+	color:#337AB7;
+}
+
+#moe-icp img {
+	position: relative;
+	top: 4px;
+	width: 20px;
+	height: 20px;
 }
