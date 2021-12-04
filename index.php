@@ -42,7 +42,7 @@
         <div class="join-buttom">
             <div class="join-item">
                 <h2>蕉拿之蒙</h2>
-                    <p><?php echo $hitokoto['hitokoto'];?>--<?php echo $hitokoto['from_who'];?></p>
+                    <p><?php echo $hitokoto['hitokoto'];?></p>
                 </div>
             <h1><a href="https://jq.qq.com/?_wv=1027&k=32CB3CeF">加入我们</a></h1>
             <h1><a href="./status">服务器状态</a></h1>
