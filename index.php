@@ -17,7 +17,7 @@
     $Server_Info = file_get_contents("https://mcapi.us/server/status?ip=" . $Server_IP);
     $Server_Info = json_decode($Server_Info, true);//解析返回的JSON数据
     $hitokoto = file_get_contents("https://v1.hitokoto.cn/?c=d");//一言-(文学类)
-    $hitokoto = json_decode($hitokoto, true);
+    $hitokoto = json_decode($hitokoto, true);//解析返回的JSON数据
     ?>
 	<div class="loading"><!--加载动画-->
 		<div class="loading-img"></div>
@@ -28,8 +28,9 @@
             <div class="menu-item">
                 <h2 class="logo"><a href="./">蕉拿之蒙</a></h2>
                 <div class="menu-item-list">
-                    <a href="./info" target="_blank">关于我们</a>
-                    <a href="./faq">FAQ</a>
+                    <a href="./info">关于我们</a>
+                    <a href="./wiki">wiki</a>
+                    <a href="./news">新闻</a>
                     <a href="./status">服务器状态</a>
                     <a href="./download" target="_blank">客户端</a>
                     <a href="./">首页</a>
@@ -41,7 +42,7 @@
         <div class="join-buttom">
             <div class="join-item">
                 <h2>蕉拿之蒙</h2>
-                    <p><?php echo $hitokoto['hitokoto'];?>--<?php echo $Server_Info['from_who'];?></p>
+                    <p><?php echo $hitokoto['hitokoto'];?>--<?php echo $hitokoto['from_who'];?></p>
                 </div>
             <h1><a href="https://jq.qq.com/?_wv=1027&k=32CB3CeF">加入我们</a></h1>
             <h1><a href="./status">服务器状态</a></h1>
@@ -73,11 +74,9 @@
                 </div>
             </div>
         </div>
-    <div id="moe-icp"><!-- 萌ICP备案信息 -->
+    <div id="copyright-bcserver"><!-- 版权信息&备案信息 -->
+        <p><strong><a href="https://guaijie.ml">Made By GuaiJie</a><a>&nbsp;|&nbsp;</a><a href="https://info.bcserver.top">©2019-<?php echo date("Y")?> BCSERVER</a></strong></p>
         <p><strong><a href="https://icp.gov.moe/?keyword=20218860" target="_blank"><img src="./img/moe-icp.png">萌ICP备20218860号</a></strong></p>
-    </div>
-    <div id="copyright-bcserver"><!-- 版权信息 -->
-        <p><a href="https://info.bcserver.top">©2019-<?php echo date("Y") ?> <strong>BCSERVER</strong></a>|<a href="https://guaijie.ml">由怪杰编写</a></p>
     </div>
     <script>
 function scroll() {//菜单透明化

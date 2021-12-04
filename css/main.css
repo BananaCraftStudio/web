@@ -65,7 +65,6 @@ a{
     overflow: hidden;
 }
 #banner {
-    background: url("../img/bg.png");
 	background-size:cover;
 	background-position:center;
 	width:100%;
@@ -78,6 +77,7 @@ a{
 .join-buttom a {
 	padding:15px;
 	border:3px solid white;
+	border-radius: 25px;
 	color:white;
 	margin-right:15px;
 	float:left;
@@ -156,7 +156,7 @@ a{
 	float:right;
 }
 #copyright-bcserver a {
-	padding-right:20px;
+	float:right;
 	color:#5F5F5F;
 	transition:0.4s;
 }
@@ -164,21 +164,7 @@ a{
 	color:#337AB7;
 }
 
-#moe-icp {
-	position: relative;
-	bottom: -41px;
-	text-align: center;
-}
-
-#moe-icp a {
-	color:#5F5F5F;
-	transition:0.4s;
-}
-#moe-icp a:hover {
-	color:#337AB7;
-}
-
-#moe-icp img {
+#copyright-bcserver img {
 	position: relative;
 	top: 4px;
 	width: 20px;
