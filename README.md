@@ -1,3 +1,7 @@
+# 本仓库已废除
+新仓库 https://github.com/guaijieyo/yunliuweb
+
+
 # 2021/12/4
 1. 修改了index1.html为main.html
 2. 修改了角标
